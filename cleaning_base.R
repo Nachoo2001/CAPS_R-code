@@ -2,12 +2,13 @@
 ### ============= Mise en forme de la base de données ELIPSS =============================
 
 # Packages
-library(readr)
-library(dplyr)
-library(stringr)
-library(tidyr)
-library(janitor)
-library(here)
+library(pacman)
+p_load(readr)
+p_load(dplyr)
+p_load(stringr)
+p_load(tidyr)
+p_load(janitor)
+p_load(here)
 
 
 
