@@ -21,50 +21,19 @@ codebook <- read_delim(
   locale = locale(encoding = "UTF-8"),
   trim_ws = FALSE,
   show_col_types = FALSE,
-  col_names = FALSE       
+  col_names = TRUE       
 )
-
-codebook <- codebook %>% 
-  rename(
-    code_var   = X1,
-    question   = X2,
-    code_mod   = X3,
-    lib_mod    = X4
-  )
 
 
 ## Données
 
 dat <- read_delim(
-  file   = here("Données", "caps_CB.csv"), # adjust name
+  file   = here("Données", "caps_postprod_260925_115149.csv"),
   delim  = ";",
-  quote  = "\"",
-  escape_double = TRUE,
   locale = locale(encoding = "UTF-8"),
-  trim_ws = FALSE,
   show_col_types = FALSE,
-  col_names = FALSE       
+  col_names = TRUE        # <- use TRUE or omit (TRUE is the default)
 )
-
-dim(dat)      # rows, cols
-names(dat)[1:20]  # peek at first columns
-
-cb_raw <- qraw %>%
-  mutate(across(everything(), ~ .x |> as.character() |> str_squish())) %>%
-  mutate(across(everything(), ~ na_if(.x, ""))) %>%
-  mutate(across(c(code_var, question), ~ ifelse(.x == "\"", NA, .x))) %>%
-  fill(code_var, question, .direction = "down") %>%
-  # on garde la ligne UID_caps même si pas de modalités
-  filter(!(str_detect(code_var, "^\\d+$") & is.na(question) & is.na(code_mod) & is.na(lib_mod))) %>%
-  mutate(code_mod = suppressWarnings(as.integer(code_mod))) %>%
-  mutate(across(c(code_var, question, lib_mod), ~ ifelse(.x %in% c("\""), NA, .x))) %>%
-  # *** on NE filtre PLUS sur (is.na(code_mod) & is.na(lib_mod)) ***
-  rename(
-    code_variable  = code_var,
-    question_label = question,
-    code_modalite  = code_mod,
-    modalite_label = lib_mod
-  )
 
 
 # ====== PLAN DE RENOMMAGE (à éditer à GAUCHE uniquement) ======
