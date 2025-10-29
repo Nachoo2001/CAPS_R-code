@@ -16,7 +16,7 @@ library(here)
 codebook <- read_delim(
   file   = here("Données", "caps_CB.csv"), # adjust name
   delim  = ";",
-  quote  = "\"",
+  quote  = "\"". 
   escape_double = TRUE,
   locale = locale(encoding = "UTF-8"),
   trim_ws = FALSE,
@@ -24,7 +24,12 @@ codebook <- read_delim(
   col_names = TRUE       
 )
 
+# Fill NA present in Code Variable so we can properly see the modalities when searching on the codebook
+codebook <- codebook %>%
+  mutate(`Code variable` = na_if(`Code variable`, "")) %>%  # treat blanks as NA
+  fill(`Code variable`, .direction = "down")                
  
+
 ## Données
 
 dat <- read_delim(
@@ -32,7 +37,7 @@ dat <- read_delim(
   delim  = ";",
   locale = locale(encoding = "UTF-8"),
   show_col_types = FALSE,
-  col_names = TRUE        # <- use TRUE or omit (TRUE is the default)
+  col_names = TRUE        
 )
 
 
@@ -49,7 +54,7 @@ rename_map <- c(
   slider_s3          = "caps_Slider_S3",
   slider_s4          = "caps_Slider_S4",
   slider_s5          = "caps_Slider_S5",
-  Treated             = "caps_ALEA_C",
+  Treatment             = "caps_ALEA_C",
   
   # ========= Variables expé ==========#
   ILLNESS              = "caps_QC01A",
@@ -254,7 +259,7 @@ map_tbl <- tibble(
 )
 
 # Dataset with variables renamed
-data <- dat %>%
+dat_renamed <- dat %>%
   rename(!!!rename_map) %>%
   select(all_of(names(rename_map)))
 
@@ -263,10 +268,160 @@ data <- dat %>%
 # ================== Recodage des variables expérimentales ====================== #
 
 
+# Recode variables
+
+data <- dat_renamed %>%
+  mutate(
+    # factor with Control as reference
+    Treatment = factor(Treatment,
+                       levels = c(2, 1),
+                       labels = c("Control", "Treated")),
+    
+    # 0/1 recodes
+    ILLNESS = case_when(
+      ILLNESS == 9999 ~ NA_real_,
+      ILLNESS == 1    ~ 1,
+      ILLNESS == 2    ~ 0,
+      TRUE            ~ NA_real_
+    ),
+    has_child = case_when(
+      has_child == 9999 ~ NA_real_,
+      has_child == 1    ~ 1,
+      has_child == 2    ~ 0,
+      TRUE              ~ NA_real_
+    ),
+    # simple NA replacements
+    USECHILDCARE = replace(USECHILDCARE, USECHILDCARE %in% c(6666, 9999), NA),
+    CHILDCAREOP = na_if(CHILDCAREOP, 9999),
+    GOVELDER    = na_if(GOVELDER,    9999),
+    GOVUNEMP    = na_if(GOVUNEMP,    9999),
+    GOVDAYCARE  = na_if(GOVDAYCARE,  9999),
+    GOVCHILD    = na_if(GOVCHILD,    9999),
+    GOVIMMIG    = na_if(GOVIMMIG,    9999),
+    CONTROLMIG  = na_if(CONTROLMIG,  9999),
+    CONTROLMIG2 = na_if(CONTROLMIG2, 9999),
+    POLFAM_transfer        = na_if(POLFAM_transfer,        9999),
+    POLFAM_transfer_poor   = na_if(POLFAM_transfer_poor,   9999),
+    POLFAM_daycare         = na_if(POLFAM_daycare,         9999),
+    POLFAM_daycare_poor    = na_if(POLFAM_daycare_poor,    9999),
+    
+    MISPERCEPTION = case_when(
+      MISPERCEPTION == 9999 ~ NA_real_,
+      MISPERCEPTION == 1    ~ 1,  # thinks they spend more
+      MISPERCEPTION == 2    ~ 0,  # does not think so
+      TRUE                  ~ NA_real_
+    ),
+    
+    CASHDISAB_pre  = na_if(CASHDISAB_pre,  9999),
+    CASHUENUMP_pre = na_if(CASHUENUMP_pre, 9999),
+    CASHELD_pre    = na_if(CASHELD_pre,    9999),
+    CASHIMMIG_pre  = na_if(CASHIMMIG_pre,  9999),
+    CASHCHILD_pre  = na_if(CASHCHILD_pre,  9999),
+    
+    # CHARACTER outputs → use NA_character_
+    POLDISABLED_pre = case_when(
+      POLDISABLED_pre == 9999 ~ NA_character_,
+      POLDISABLED_pre == 1    ~ "Compensation",
+      POLDISABLED_pre == 2    ~ "Activation",
+      TRUE                    ~ NA_character_
+    ),
+    POLUNEMP_pre = case_when(
+      POLUNEMP_pre == 9999 ~ NA_character_,
+      POLUNEMP_pre == 1    ~ "Compensation",
+      POLUNEMP_pre == 2    ~ "Activation",
+      TRUE                 ~ NA_character_
+    ),
+    POLMONO_pre = case_when(
+      POLMONO_pre == 9999 ~ NA_character_,
+      POLMONO_pre == 1    ~ "Compensation",
+      POLMONO_pre == 2    ~ "Activation",
+      TRUE                ~ NA_character_
+    ),
+    POLPOOR_pre = case_when(
+      POLPOOR_pre == 9999 ~ NA_character_,
+      POLPOOR_pre == 1    ~ "Compensation",
+      POLPOOR_pre == 2    ~ "Activation",
+      TRUE               ~ NA_character_
+    ),
+    UNEMPCONCEPT_pre = na_if(UNEMPCONCEPT_pre, 9999),
+    
+    CASHDISAB_post = na_if(CASHDISAB_post, 9999),
+    
+    POLDISABLED_post = case_when(
+      POLDISABLED_post == 9999 ~ NA_character_,
+      POLDISABLED_post == 1    ~ "Compensation",
+      POLDISABLED_post == 2    ~ "Activation",
+      TRUE                     ~ NA_character_
+    ),
+    POLUNEMP_post = case_when(
+      POLUNEMP_post == 9999 ~ NA_character_,
+      POLUNEMP_post == 1    ~ "Compensation",
+      POLUNEMP_post == 2    ~ "Activation",
+      TRUE                  ~ NA_character_
+    ),
+    POLMONO_post = case_when(
+      POLMONO_post == 9999 ~ NA_character_,
+      POLMONO_post == 1    ~ "Compensation",
+      POLMONO_post == 2    ~ "Activation",
+      TRUE                 ~ NA_character_
+    ),
+    POLPOOR_post = case_when(
+      POLPOOR_post == 9999 ~ NA_character_,
+      POLPOOR_post == 1    ~ "Compensation",
+      POLPOOR_post == 2    ~ "Activation",
+      TRUE                 ~ NA_character_
+    ),
+    UNEMPCONCEPT_post = na_if(UNEMPCONCEPT_post, 9999)
+  )
+
+    
+    
+## ========== Checks =============== ## 
+
+# This is a function that computes the distribution for our variables of interest
+dist_overall <- function(df, vars, digits = 1) {
+  bind_rows(lapply(vars, function(v) {
+    vec <- df[[v]]
+    tibble(variable = v, level = as.character(vec)) |>
+      count(variable, level, name = "n") |>
+      group_by(variable) |>
+      mutate(total = sum(n),
+             pct   = round(100 * n / total, digits)) |>
+      ungroup() |>
+      arrange(variable, desc(n))
+  }))
+}
+
+
+# Our variables of interest
+vars <- c(
+  "Treatment",
+  "ILLNESS", "has_child", "USECHILDCARE",
+  "CHILDCAREOP", "GOVELDER", "GOVUNEMP", "GOVDAYCARE", "GOVCHILD", "GOVIMMIG",
+  "CONTROLMIG", "CONTROLMIG2",
+  "POLFAM_transfer", "POLFAM_transfer_poor", "POLFAM_daycare", "POLFAM_daycare_poor",
+  "MISPERCEPTION",
+  "CASHDISAB_pre", "CASHUENUMP_pre", "CASHELD_pre", "CASHIMMIG_pre", "CASHCHILD_pre",
+  "POLDISABLED_pre", "POLUNEMP_pre", "POLMONO_pre", "POLPOOR_pre", "UNEMPCONCEPT_pre",
+  "CASHDISAB_post",
+  "POLDISABLED_post", "POLUNEMP_post", "POLMONO_post", "POLPOOR_post", "UNEMPCONCEPT_post"
+)
+
+# Create the table
+overall <- dist_overall(data, vars, digits = 1)
+View(overall)
 
 
 
+## Mean differences Control vs Treated
 
+vars_of_interest <- c(
+  "MISPERCEPTION",
+  "CASHDISAB_pre","CASHUENUMP_pre","CASHELD_pre","CASHIMMIG_pre","CASHCHILD_pre",
+  "POLDISABLED_pre","POLUNEMP_pre","POLMONO_pre","POLPOOR_pre","UNEMPCONCEPT_pre",
+  "CASHDISAB_post",
+  "POLDISABLED_post","POLUNEMP_post","POLMONO_post","POLPOOR_post","UNEMPCONCEPT_post"
+)
 
 
 
