@@ -1,0 +1,378 @@
+---
+title: "Understanding Social Policy Acceptability (CAPS)"
+subtitle: "An Experimental Approach to Policy Deservingness"
+author: 
+  - "Laudine Carbuccia"
+  - "Andrew Zola"
+institute: "Sciences Po - CRIS & LIEPP"
+date: today
+format: 
+  revealjs:
+    theme: default
+    slide-number: true
+    preview-links: auto
+    chalkboard: true
+    scrollable: true
+    smaller: true
+---
+
+## Research Context & Motivation
+
+### Democratic Imperative
+
+In democratic contexts, social policy acceptability constitutes a **sine qua non condition** for co-constructing public policies that are:
+
+-   Not only **efficient and equitable**
+-   But also **democratically acceptable** to the general public
+
+------------------------------------------------------------------------
+
+## Central Problematic
+
+**How, for whom, and why do different social policies garner public support?**
+
+*Example: Carbon tax and Gilets Jaunes crisis - demonstration of importance of designing policies that are not only effective but also acceptable*
+
+## Research Questions
+
+### Primary Research Question
+
+**What are the determinants of social policy acceptability?**
+
+------------------------------------------------------------------------
+
+## Specific Research Dimensions
+
+**To what extent do the following moderate social policy acceptability:**
+
+1.  **Implicit judgments** about characteristics of beneficiary groups
+2.  **Specific nature** of the social policy instrument
+3.  **Perceptions of macroeconomic context**
+
+**And for whom do these mechanisms operate?**
+
+## Theoretical Framework
+
+### Interdisciplinary Convergence
+
+**Integration of three analytical perspectives:**
+
+-   **Political Economy**: cost-benefit calculations and macro context
+-   **Psychology**: moral judgments and cognitive heuristics\
+-   **Sociology**: socio-economic positions and ideological orientations
+
+------------------------------------------------------------------------
+
+## Political Economy Approach
+
+**Core Principle:** Actors balance **perceived macroeconomic costs** of policies against **anticipated social benefits**
+
+**Identified Mechanisms:**
+
+-   Perceived benefits depend on **inferred capacity** of beneficiaries to make good use of aid
+-   Calculations influenced by **perceived macroeconomic context**
+-   When austerity perceived as inevitable → reduced support for redistribution (Blyth, 2013)
+
+------------------------------------------------------------------------
+
+## Psychological Approach: "Deservingness"
+
+**Core Principle:** Not all vulnerable groups are judged as equally **deserving**
+
+**Mobilized Heuristics:**
+
+-   **Morality** of beneficiaries
+-   **Work ethic**
+-   **Degree of control** over their situation of vulnerability
+
+------------------------------------------------------------------------
+
+## Empirical Hierarchy of Deservingness
+
+**Established Pattern:**
+
+-   **"Deserving" groups**: elderly, disabled persons
+-   **"Less deserving" groups**: unemployed, immigrants
+
+**Based on perceived:**
+
+-   Control over situation
+
+-   Moral character
+
+-   Reciprocity potential
+
+------------------------------------------------------------------------
+
+## Theoretical Convergence: Information
+
+### Common Ground
+
+**Both approaches emphasize:** Crucial importance of **information** in forming acceptability judgments
+
+**Central Hypothesis:** Correcting erroneous perceptions can modify social policy acceptability
+
+**Key insight:** Whether from cost-benefit or intuitive judgment perspective, providing information about policy effectiveness or beneficiary merit represents a promising approach
+
+## Focus: Mus et al. (2024)
+
+### Major Empirical Contribution
+
+**Study Object:** Impact of misperceptions on support for cash transfers
+
+**Experimental Design:**
+
+-   Perception correction: *"Low-income households don't spend more on alcohol/tobacco when receiving transfers."*
+
+-   Information based on 19 international scientific studies
+
+------------------------------------------------------------------------
+
+## Mus et al.: Contrasting Results
+
+**United Kingdom:** Significant increase in acceptability after correction
+
+**France:** No significant effect despite 37% holding erroneous perceptions
+
+**Puzzle:** Why does information work in UK but not France?
+
+------------------------------------------------------------------------
+
+## Mus et al.: Identified Limitations
+
+1.  **No distinction** according to beneficiary profiles
+2.  **Underlying mechanisms** of French ineffectiveness not elucidated\
+3.  **Other psychological barriers** not investigated
+
+## Our Contribution
+
+### Extension of Mus et al. Paradigm
+
+**Theoretical and Methodological contributions:**
+
+-   **Variation in beneficiary profiles** (deservingness dimension)
+
+-   **Additional dimension**: perceived control over situation
+
+-   New category – **Children**: absent from deservingness literature
+
+-   Change of *policy instrument*
+
+-   Investigation of how **macroeconomic contexts** can moderate the effects
+
+------------------------------------------------------------------------
+
+## Experimental Design Overview
+
+### Sequential Three-Stage Experimental Approach
+
+**Objective:** Identify **causal effects** of acceptability factors
+
+**Population(s):** **France**: ELIPSS Panel (representative probability sample)
+
+------------------------------------------------------------------------
+
+## General Architecture
+
+1.  **STAGE 1**: Merit hierarchy and perception correction
+2.  **STAGE 2**: Policy instrument acceptability
+3.  **STAGE 3**: Macroeconomic context impact (austerity treatment)
+
+## Stage 1: Merit Hierarchy
+
+### Descriptive Component
+
+**Measure acceptability of cash transfers for 5 groups:**
+
+-   Elderly persons
+-   Disabled persons
+-   **Children** (innovation)
+-   Unemployed persons
+-   Immigrants
+
+------------------------------------------------------------------------
+
+## Stage 1: Experimental Component
+
+**Randomized informational treatment on two dimensions:**
+
+1.  **Transfer usage** (Mus et al. replication)
+    -   *"Low-income households don't spend transfers on alcohol/tobacco"*
+2.  **Perceived control** (innovation)
+    -   *"Vulnerable households are rarely vulnerable by choice"*
+    -   *"It would take 180 years for a child born in poverty to escape it"*
+
+------------------------------------------------------------------------
+
+## Stage 1: Hypotheses
+
+**H1a:** Traditionally deserving groups \> less deserving groups
+
+**H1b:** Children will benefit from strong support (comparable to deserving groups)
+
+**H2a:** Perception correction → ↑ acceptability
+
+**H2b:** Stronger effect for initially less supported groups
+
+## Stage 2: Policy Instruments
+
+### 2A. Family Policies
+
+**Systematic Comparison:**
+
+-   **Cash transfers** vs **Services** (childcare places)
+-   **Universal approach** vs **Targeting** disadvantaged populations
+
+**4 policy combinations tested**
+
+**Objective:** Identify which instrument(s) benefit from strongest public support
+
+------------------------------------------------------------------------
+
+## Stage 2B: Activation vs Compensation
+
+**For each social group, choice between:**
+
+-   **"Compensation" policies**: passive transfers
+-   **"Activation" policies**: training, job support
+-   
+
+------------------------------------------------------------------------
+
+## Stage 2: Hypothesis
+
+**H3:** Policy preferences vary by group deservingness
+
+-   **Activation preferred** for non-deserving groups
+-   **Compensation acceptable** for deserving groups
+
+**Mechanism:** Activation seen as promoting contribution to the group and global economic welfare
+
+## Stage 3: Macroeconomic Context
+
+### "Austerity" Treatment
+
+**Information provided:**
+
+-   Inflation and post-COVID budgetary problems
+-   French public debt: 113% of GDP (3,305 billion €)
+-   Social spending: 32% of GDP
+-   Government discussions on "budget cuts"
+
+------------------------------------------------------------------------
+
+## Stage 3: Hypotheses
+
+**H4a:** Unfavorable context → ↑ support for activation policies
+
+**H4b:** More marked effect for non-deserving groups
+
+**H4c-H4d:** ↓ support for compensation policies (especially non-deserving groups)
+
+**Mechanism:** Scarcity makes investment logic more appealing
+
+## Questionnaire Structure {.smaller}
+
+### Framing Variables (Q1-Q6)
+
+-   **Q1**: Disability status (potential moderator)
+-   **Q2-Q3**: Childcare experience + child development opinions
+-   **Q4**: State responsibilities (ESS8 replication + children/immigrants items)
+-   **Q5**: Perceived control scale unemployment (Jensen & Petersen, 2017)
+-   **Q6**: Early childhood policy acceptability (4 modalities)
+
+------------------------------------------------------------------------
+
+## Main Experimental Block (Q7-Q8) {.smaller}
+
+**Q7**: Perception measurement + informational treatment
+
+-   Baseline question: *"Do low-income households spend transfers on alcohol/tobacco?"*
+-   Treatment group receives correction + control information
+
+**Q8**: Cash transfer acceptability by group (5 groups, 0-10 scales)
+
+-   Randomized order presentation
+-   Same order maintained throughout questionnaire
+
+------------------------------------------------------------------------
+
+## Final Blocks (Q9-Q10) {.smaller}
+
+**Q9**: Alternative Instruments - Binary choices activation/compensation for 4 vulnerable groups
+
+**Q10**: Austerity Treatment + Repetition - Macroeconomic information - Option to revise previous responses - Repeat Q8-Q9 to measure treatment effects
+
+## 
+
+## Comparative Perspective
+
+**Three welfare state regimes:**
+
+-   **France & Germany**: Conservative welfare states
+-   **United States**: Liberal welfare state
+
+**Theoretical expectation:** Similar patterns in conservative regimes, different in liberal regime
+
+**Innovation:** First experimental comparison across welfare regimes
+
+## Expected Contributions
+
+### Theoretical Innovations
+
+1.  **Unified analytical framework** integrating political economy, psychology, sociology
+2.  **Introduction of children** in deservingness analysis
+3.  **Causal mechanisms** of differential acceptability
+4.  **Cross-national validation** of deservingness theory
+
+------------------------------------------------------------------------
+
+## 
+
+## Originality & Policy Relevance
+
+### Academic Contributions
+
+**Interdisciplinary Integration:** First study to experimentally test compatibility of mechanisms proposed by different disciplines
+
+**Methodological Innovation:** Combination of observational (representative samples) and experimental approaches
+
+**Theoretical Extension:** Children as new target group in deservingness research
+
+------------------------------------------------------------------------
+
+## Policy Applications
+
+**Democratic Design:** Understanding acceptability as prerequisite for sustainable policy reform
+
+**Evidence-Based Recommendations:** Identifying which instruments work for which populations under which conditions
+
+**Crisis Context:** Particularly relevant in post-COVID context of budgetary constraints
+
+## 
+
+## Workshop Discussion Points
+
+### Methodological Questions
+
+1.  **Clarity of hypotheses** and causal chain?
+2.  **Relevance** of studied social group choices?
+3.  **Ecological validity** of informational treatments?
+4.  **Balance** between experimental rigor and political realism?
+
+------------------------------------------------------------------------
+
+## Theoretical Questions
+
+1.  **Cross-national generalizability** of deservingness mechanisms?
+2.  **Stability** of treatment effects over time?
+3.  **Interaction effects** between different dimensions?
+4.  **Children as deservingness category** - theoretical fit?
+
+------------------------------------------------------------------------
+
+## Questions & Discussion
+
+**Thank you for your attention**
+
+*Let's discuss the experimental design, theoretical framework, and methodological choices*

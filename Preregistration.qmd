@@ -1,0 +1,789 @@
+---
+title: "Acceptability of Social Policy"
+subtitle: "Understanding Social Policy Acceptability (CAPS) - Preregistration"
+author: 
+  - "Laudine Carbuccia"
+  - "Andrew Zola"
+date: "`r Sys.Date()`"
+output:
+  word_document:
+    toc: true
+    number_sections: true
+  html_document:
+    toc: true
+    number_sections: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(knitr)
+library(kableExtra)
+```
+
+# Research Project Description: Understanding Social Policy Acceptability (CAPS)
+
+## Project Overview
+
+The "Understanding Social Policy Acceptability" (CAPS) project is an ambitious interdisciplinary research initiative that explores the fundamental question of what makes social policies acceptable to the general public in democratic societies. This project addresses a critical gap in understanding how citizens evaluate and support different social policy interventions, which is essential for designing policies that are not only effective and equitable but also democratically sustainable.
+
+## Purpose and Rationale
+
+In democratic contexts, policy acceptability represents a *sine qua non* condition for successful implementation and long-term sustainability of social interventions. Recent events, such as the French Yellow Vests movement's opposition to carbon taxation, have demonstrated the crucial importance of public acceptance in policy success. The project addresses this challenge by investigating the psychological, economic, and social mechanisms that drive public support for various social policies.
+
+The research builds on the convergence of three distinct but complementary theoretical approaches:
+
+1.  **Political Economy**: Citizens engage in cost-benefit calculations, weighing perceived macroeconomic costs against anticipated social benefits
+2.  **Psychology**: Moral judgments and cognitive heuristics influence perceptions of which groups "deserve" support
+3.  **Sociology**: Socio-economic positions and ideological orientations shape policy preferences
+
+## Core Research Questions
+
+The project is organized around a central research question: **What are the determinants of social policy acceptability?**
+
+This primary question is explored through three specific dimensions:
+
+1.  **Deservingness and Group Characteristics**: How do implicit judgments about beneficiary groups influence policy support?
+2.  **Policy Instrument Design**: How does the specific nature of social policies (compensation vs. activation) affect acceptability?
+3.  **Macroeconomic Context**: How do perceptions of economic constraints modify policy preferences?
+
+## Methodological Innovation
+
+The project employs a sequential three-stage experimental design that combines descriptive analysis with causal identification. This approach represents a significant methodological advance over traditional correlational studies by enabling researchers to isolate specific mechanisms driving policy acceptability.
+
+### Stage 1: Merit Hierarchy and Perception Correction
+
+-   Measures baseline acceptability of cash transfers across five social groups: elderly, disabled persons, children, unemployed, and immigrants
+-   Implements randomized informational treatments to correct misperceptions about beneficiary behavior and agency
+-   Tests whether correcting false beliefs about how recipients use aid increases policy support
+
+### Stage 2: Policy Instrument Comparison
+
+-   Compares acceptability of different policy tools (cash transfers vs. services, universal vs. targeted approaches)
+-   Examines preferences between "activation" policies (job training, skill development) and "compensation" policies (direct transfers)
+-   Identifies which instruments are preferred for which beneficiary groups
+
+### Stage 3: Macroeconomic Context Effects
+
+-   Tests how information about budgetary constraints and economic pressures affects policy preferences
+-   Examines whether austerity messaging increases support for activation policies over compensation
+-   Analyzes differential effects across beneficiary groups
+
+## Theoretical and Empirical Contributions
+
+### Theoretical Innovations
+
+**Integration of Disciplinary Perspectives**: The project provides the first systematic experimental test of mechanisms proposed by different social science disciplines, moving beyond theoretical speculation to empirical validation.
+
+**Introduction of Children as Target Group**: Unlike existing research that focuses on traditional adult populations, this study introduces children as a distinct category for analyzing deservingness, filling a significant gap in the literature.
+
+**Dynamic Understanding of Attitudes**: Challenges the assumption that policy preferences are fixed by demonstrating their malleability through information provision.
+
+### Methodological Advances
+
+**Causal Identification**: The experimental approach enables identification of causal effects rather than mere correlations, providing stronger evidence for policy recommendations.
+
+**Representative Sampling**: Use of probability-based representative panels (ELIPSS in France, German Internet Panel, Understanding America Study) ensures external validity and generalizability.
+
+**Cross-National Comparison**: Comparative design across different welfare state regimes (conservative: France/Germany; liberal: United States) tests the universality versus context-specificity of identified mechanisms.
+
+## International Comparative Dimension
+
+The project's comparative approach examines whether deservingness mechanisms operate similarly across different institutional contexts. By comparing countries with different welfare state traditions, the research tests whether findings are universal psychological phenomena or culturally and institutionally specific patterns.
+
+-   **France and Germany**: Conservative welfare states with strong social insurance traditions
+-   **United States**: Liberal welfare state emphasizing market mechanisms and means-testing
+
+This comparison enables researchers to distinguish between universal psychological mechanisms and context-dependent institutional effects.
+
+## Expected Outcomes and Impact
+
+### Academic Contributions
+
+1.  **Unified Theoretical Framework**: Development of an integrated model combining insights from political economy, psychology, and sociology
+2.  **Publication Pipeline**: Multiple high-impact publications in generalist journals (PNAS, Nature Human Behavior) and specialized outlets (Journal of European Social Policy, Political Psychology)
+3.  **Methodological Template**: Establishing a replicable experimental framework for studying policy acceptability
+
+### Policy Applications
+
+1.  **Evidence-Based Design**: Providing policymakers with empirical guidance on which policy instruments are likely to garner public support
+2.  **Communication Strategies**: Identifying effective approaches for building support for policies targeting less popular beneficiary groups
+3.  **Democratic Legitimacy**: Contributing to the design of policies that balance effectiveness with democratic acceptability
+
+### Societal Impact
+
+1.  **Reducing Inequality**: Improving acceptability of policies that support disadvantaged groups, particularly immigrants and unemployed persons
+2.  **Child Welfare**: Demonstrating potential pathways for building support for early childhood interventions
+3.  **Crisis Response**: Providing insights relevant to policy responses during economic downturns and fiscal constraints
+
+## Timeline and Implementation
+
+The project follows a carefully structured timeline:
+
+-   **Data Collection**: July 2025 (France), 2026 (Germany and US)
+-   **Analysis Phase**: September 2025 - August 2027
+-   **Publication**: Multiple papers released throughout 2026-2027
+-   **Dissemination**: Policy briefs and stakeholder workshops
+
+## Broader Significance
+
+This research addresses one of the most pressing challenges in contemporary democratic governance: how to design effective social policies that maintain public support. By providing empirical evidence on the mechanisms driving policy acceptability, the project contributes to both academic understanding and practical policymaking in an era of growing inequality and political polarization.
+
+The project's interdisciplinary approach and experimental rigor position it to make significant contributions to multiple fields while addressing real-world challenges in social policy design and implementation. Its findings will be particularly valuable for policymakers, civil society organizations, and researchers working on social policy reform and democratic governance.
+
+**Contributors**: Laudine Carbuccia and Andrew Zola
+
+**Category**: Project
+
+**Year**: 2025
+
+**Copyright Holders**: Carbuccia; Zola
+
+**Subjects**: Economic Policy, Social Policy, Other Social and Behavioral Sciences, Sociology, Psychology, Inequality and Stratification, Social and Behavioral Sciences, Political Science, Social Work, Public Affairs, Public Policy and Public Administration
+
+**Tags**: acceptability, experimental sociology, political psychology, social policy
+
+# Study Information
+
+## Hypotheses
+
+### H1: Deservingness Hierarchy (Descriptive)
+
+**H1a** *(Directional)*: Traditional "deserving" groups (elderly persons, disabled persons) will receive significantly higher support for cash transfers than "less deserving" groups (unemployed persons, immigrants). - *Direction*: Deserving groups \> Less deserving groups - *Predicted effect*: Mean difference in acceptability ratings between groups
+
+**H1b** *(Directional)*: Children will receive high support for social policies, comparable to other traditionally deserving groups. - *Direction*: Children ≈ Elderly/Disabled \> Unemployed/Immigrants - *Predicted effect*: Children's acceptability ratings similar to elderly/disabled
+
+### H2: Information Treatment Effects (Experimental)
+
+**H2a** *(Directional)*: Correcting misperceptions about cash transfer usage and beneficiary control will increase acceptability of cash transfers across all groups. - *Direction*: Treatment group \> Control group - *Predicted effect*: Positive main effect of information treatment
+
+**H2b** *(Directional - Interaction)*: The information treatment will have a stronger positive effect on acceptability for initially less deserving groups. - *Direction*: Treatment effect larger for less deserving groups - *Predicted effect*: Treatment × Group interaction (stronger effect for unemployed/immigrants)
+
+### H3: Policy Instrument Preferences (Descriptive)
+
+**H3** *(Directional - Interaction)*: Policy instrument preferences will vary by group deservingness: - For less deserving groups: Activation policies \> Compensation policies - For deserving groups: Compensation policies ≥ Activation policies - *Predicted effect*: Group × Policy Type interaction
+
+### H4: Macroeconomic Context Effects (Experimental)
+
+**H4a** *(Directional)*: Austerity information will increase average support for activation policies. - *Direction*: Austerity treatment \> Control for activation policies - *Predicted effect*: Positive main effect on activation policy support
+
+**H4b** *(Directional - Interaction)*: The austerity treatment will have a stronger positive effect on activation policy support for less deserving groups. - *Direction*: Larger treatment effect for less deserving groups - *Predicted effect*: Austerity Treatment × Group interaction on activation support
+
+**H4c** *(Directional)*: Austerity information will reduce support for compensation policies. - *Direction*: Austerity treatment \< Control for compensation policies - *Predicted effect*: Negative main effect on compensation policy support
+
+**H4d** *(Directional - Interaction)*: The austerity treatment will have a stronger negative effect on compensation policy support for less deserving groups. - *Direction*: Larger negative treatment effect for less deserving groups - *Predicted effect*: Austerity Treatment × Group interaction on compensation support
+
+### Exploratory Analysis
+
+**Family Policy Instruments** *(Non-directional)*: Comparison of acceptability between cash transfers vs. childcare services, and universal vs. targeted approaches for early childhood policies. - *Note*: This is exploratory with no specific directional hypothesis due to limited prior literature.
+
+### Key Interaction/Moderation Hypotheses
+
+-   **H2b**: Information Treatment × Deservingness Group (stronger effects for less deserving groups)
+-   **H3**: Policy Type × Deservingness Group (different preferences by group type)
+-   **H4b & H4d**: Austerity Treatment × Deservingness Group (differential context effects by group)
+
+# Design Plan
+
+## Study Type
+
+Experiment - A researcher randomly assigns treatments to study subjects, this includes field or lab experiments. This is also known as an intervention experiment and includes randomized controlled trials.
+
+## Blinding
+
+For studies that involve human subjects, they will not know the treatment group to which they have been assigned. Personnel who interact directly with the study subjects (either human or non-human subjects) will not be aware of the assigned treatments. (Commonly known as "double blind")
+
+## Study Design
+
+### Overall Design Framework
+
+**Sequential Mixed-Methods Experimental Design** with three distinct stages, combining between-subjects randomized treatments with within-subjects repeated measures components.
+
+### Stage 1: Merit Hierarchy and Perception Correction
+
+**Design Type**: Mixed design (between-subjects treatment × within-subjects measures)
+
+**Between-subjects component**:
+
+\- **Randomized controlled trial** with participants randomly assigned to:
+
+\- **Control group**: No informational treatment
+
+\- **Treatment group**: Receives corrective information about cash transfer usage and beneficiary control over their situation
+
+**Within-subjects component**:
+
+ - All participants rate the acceptability of cash transfers for **5 beneficiary groups**: - Elderly persons - Disabled persons - Children/young parents - Unemployed persons - Immigrants
+
+\- **Randomized presentation order** of groups (counterbalanced across participants)
+
+\- **Order maintained consistently** for each participant throughout questionnaire
+
+### Stage 2: Policy Instrument Preferences
+
+**Design Type**: Within-subjects repeated measures
+
+**Component 2A - Family Policies**: - **2×2 factorial within-subjects design**:
+
+\- Instrument type: Cash transfers vs. Childcare services
+
+\- Targeting: Universal vs. Means-tested for disadvantaged populations \
+- Creates 4 policy combinations measured within each participant based on whether they are universal or target, and compensation or activation
+
+**Component 2B - Activation vs. Compensation**: - **Binary forced-choice design** within-subjects. For each of 4 vulnerable groups, participants choose between:
+
+\- Compensation policies (passive transfers)
+
+\- Activation policies (training/job support)
+
+### Stage 3: Macroeconomic Context Treatment
+
+**Design Type**: Pre-post repeated measures (within-subjects)
+
+**Procedure**:
+
+1\. **Austerity information treatment** provided to all participants
+
+2. **Option to revise** previous responses from Stages 1-2 3. **Repeat administration** of key measures to assess treatment effects
+
+4\. **Comparison** of pre-treatment vs. post-treatment responses
+
+### Randomization and Counterbalancing
+
+**Multiple randomization points**:
+
+\- **Treatment assignment** (Stage 1): Random assignment to control vs. treatment condition
+
+\- **Item presentation order**: Multiple randomized orders throughout questionnaire - Beneficiary group order (Stage 1) - Policy option order (Stage 2A) - Scale orientation (control scale items with random positive/negative valence)
+
+**Counterbalancing strategy**:
+
+\- Presentation orders randomized at participant level
+
+\- Same randomized order **maintained consistently** within each participant's questionnaire
+
+ - Prevents order effects while maintaining internal consistency
+
+### Sample Design
+
+**Population**: Representative probability-based panels - **France**: ELIPSS panel (primary focus)
+
+Other pre-registrations will be done later for other countries. At the time of this registration, France is the only country on which data is being collected.
+
+**Cross-national comparative design** allowing for between-country comparisons of experimental effects across different welfare state regimes.
+
+### Control Variables and Covariates
+
+**Pre-experimental measures** (Q1-Q6): - Disability status (potential effect moderator) - Childcare experience and attitudes - State responsibility attitudes (baseline preferences) - Perceived control beliefs about unemployment - Early childhood policy preferences
+
+**Post-experimental measures**: - Treatment credibility assessment - Demographic and ideological variables from panel history
+
+Other data will be retrieved later based on data availability, such as age, political affiliation, gender, and labor market integration.
+
+This design allows for **causal inference** about information effects while maintaining **ecological validity** through representative sampling and realistic policy scenarios.
+
+## Randomization
+
+Randomization at the level of the individual, no stratification
+
+# Sampling Plan
+
+## Existing Data
+
+Registration prior to accessing the data
+
+## Explanation of Existing Data
+
+This study will link our experimental data collected through the ELIPSS panel with existing data from previous ELIPSS waves and modules. The existing data we plan to use includes:
+
+1.  **Sociodemographic variables** from ELIPSS annual surveys (e.g., age, education, income, employment status, household composition)
+
+2.  **Political and ideological variables** from annual surveys, including:
+
+    -   Political orientation (left-right scale)
+    -   Institutional trust measures
+    -   General social trust
+
+3.  **Variables from the ISSP 2022 "Family and Social Roles" module**, particularly:
+
+    -   Attitudes toward women's roles in the family
+    -   Views on work-family balance
+    -   Gender role traditionalism measures
+
+4.  **Additional contextual variables** such as habitat type and regional indicators
+
+### Data Access Limitations and Blindness Procedures
+
+At the time of this preregistration, **no existing ELIPSS data has been accessed or analyzed by any member of our research team**. We have identified the relevant variables based solely on ELIPSS documentation and questionnaire metadata, without examining any actual responses or summary statistics.
+
+Data access will be managed as follows: - Existing ELIPSS data will only be accessed after our experimental module has been administered and our experimental data collected - The CDSP (Centre de données socio-politiques) will perform the data linkage using anonymous identifiers - We will receive only the linked, anonymized dataset without access to individual identifiers - No preliminary analysis of existing ELIPSS data patterns will be conducted prior to receiving our complete linked dataset
+
+This approach ensures that our hypotheses and analysis plan remain unbiased by any prior knowledge of existing data patterns or relationships, maintaining the integrity of our experimental design and preventing any form of selective reporting or hypothesis adjustment based on observed data patterns.
+
+## Data Collection Procedures
+
+### Data Collection Framework
+
+Data collection for this study is conducted entirely through the ELIPSS (Longitudinal Internet Studies for the Social Sciences) panel, managed by the Centre de données socio-politiques (CDSP) at Sciences Po. ELIPSS is a probability-based panel representative of the French metropolitan population aged 18 and older.
+
+### ELIPSS Panel Characteristics
+
+-   **Population:** French metropolitan population aged 18+
+-   **Sampling method:** Multi-stage probability sampling with random selection from INSEE address databases
+-   **Panel size:** Approximately 2,600 active participants
+-   **Recruitment:** ELIPSS handles all recruitment through initial face-to-face contact, with tablets provided to participants lacking internet access to ensure representativeness
+-   **Participation incentives:** Managed by ELIPSS according to their standard procedures (small monetary incentives per completed survey)
+
+### Our Study Integration
+
+Our experimental module was integrated into the regular ELIPSS survey administration cycle following approval through their doctoral call for projects (won by Laudine Carbuccia and Andrew Zola).
+
+### Timeline and Data Access
+
+-   **Data collection start:** July 4, 2025
+-   **Data collection status:** Ongoing as of preregistration date
+-   **Estimated completion:** Summer 2025
+-   **Data access:** Fall 2025, after CDSP team completes data cleaning, quality control, anonymization, and linkage with existing ELIPSS variables
+
+### Inclusion/Exclusion Criteria
+
+-   **Inclusion:** All active ELIPSS panel members who complete our experimental module
+-   **Exclusion:** Participants with incomplete responses to key experimental questions (treatment conditions and main outcome measures)
+-   **Missing data handling:** Participants with partial responses will be included in analyses where they have complete data for specific research questions
+
+### Data Processing by CDSP
+
+The CDSP team will handle all technical aspects, including: - Data quality control and cleaning - Anonymization of all personal identifiers\
+- Linkage with relevant existing ELIPSS variables identified in our preregistration - Delivery of the final anonymized dataset ready for analysis
+
+## Sample Size
+
+**Total sample invited:** 2,600 participants from the ELIPSS panel
+
+**Expected response rate:** 81-84% based on historical ELIPSS response rates for similar modules
+
+**Effective sample size:** Approximately 2,100-2,184 participants (2,600 × 0.81-0.84)
+
+**Units of analysis:** Individual participants (adult French metropolitan residents aged 18+)
+
+### Experimental Design Considerations
+
+-   Participants will be randomly assigned to treatment and control conditions
+-   **Treatment assignment (Q7):** Approximately 50% receive informational treatment, 50% control
+-   **Austerity treatment (Q10):** All participants receive the macroeconomic context information, with pre-post comparison design
+-   **Question randomization:** Order of items within questions randomized per participant but maintained consistently throughout their survey
+
+### Power Analysis
+
+Based on power calculations with the following parameters:
+
+\- **α = 5%** (Type I error rate)
+
+\- **Power = 80%** (1 - β)
+
+\- **Treatment allocation:** 50% treated, 50% control
+
+\- **Retention rate:** 100% (within-session experiment)
+
+\- **Control contamination:** 0%
+
+\- **Baseline covariates R² = 20%**
+
+**Minimum detectable effect size:** 0.11 standard deviations
+
+This represents our ability to detect relatively small but meaningful differences in policy acceptability between treatment and control groups. The large sample size provides substantial statistical power to detect even modest treatment effects, which is appropriate given that social policy attitudes may show incremental rather than dramatic shifts in response to informational interventions.
+
+**Subgroup analyses:** The effective sample size will allow for analysis of heterogeneous treatment effects across beneficiary groups and sociodemographic categories while maintaining adequate power for multiple comparisons with appropriate statistical corrections.
+
+**Data structure:** Single-level design with repeated measures (pre-post austerity treatment), no clustering or multilevel structure required.
+
+## Sample Size Rationale
+
+All participants in the panel
+
+# Variables
+
+## Manipulated Variables
+
+### 1. Primary Informational Treatment (Q7)
+
+-   **Variable name:** Misperception correction treatment\
+-   **Type:** Between-subjects randomization
+-   **Levels:** 2 levels
+    -   **Control condition (Treatment == 0):** Participants answer the perception question about cash transfer usage but receive no corrective information
+    -   **Treatment condition (Treatment == 1):** Participants receive corrective information after answering the perception question:
+        -   Information about actual cash transfer usage: *"The correct answer is: Compared to similar households that do not receive financial aid, low-income households that receive aid do not spend more on non-essential goods like alcohol and tobacco. Results from 19 scientific studies worldwide show that low-income households do not buy more alcohol and tobacco when they receive financial aid (compared to comparable low-income households)."*
+        -   Information about control over situation: *"Vulnerable households are rarely vulnerable by choice. For example, OECD estimates show that in France, it would take 180 years for a child born in poverty to escape it."*
+
+### 2. Austerity Context Treatment (Q10)
+
+-   **Variable name:** Macroeconomic context salience
+-   **Type:** Within-subjects manipulation (pre-post design)
+-   **Levels:** 2 measurement points
+    -   **Pre-treatment:** Initial responses to acceptability questions (Q8-Q9)
+    -   **Post-treatment:** Same questions repeated after exposure to austerity information: *"Inflation has caused significant problems for government budgets in recent years. In France, public debt reached 113% of GDP at the end of 2024, or 3,305 billion euros. One of the most expensive branches of the state is social spending, which represented 32% of GDP in France in 2022. As a result, the French government has recently discussed the need for serious budget cuts due to the rapid increase in debt."*
+
+### 3. Question Order Randomizations
+
+-   **Variable name:** Item presentation order
+-   **Type:** Between-subjects randomization
+-   **Applications:**
+    -   **Q4:** Random order of state responsibility items
+    -   **Q5:** Random order of control perception items + random valence order (consistently applied per participant)\
+    -   **Q6:** Random order of early childhood policy options
+    -   **Q8:** Random order of beneficiary groups (maintained throughout questionnaire for each participant)
+    -   **Q9:** Random order of vulnerable groups for activation/compensation choices
+
+**Treatment assignment:** - Approximately 50% of participants randomly assigned to informational treatment condition - All participants receive austerity treatment in within-subjects design - Order randomizations applied independently per participant
+
+## Measured Variables
+
+### Primary Outcome Variables
+
+**Cash Transfer Acceptability (Q8)** \
+- **CASHDISAB**: Acceptability of cash transfers for disabled persons (0-10 scale)
+
+\- **CASHUNEMP**: Acceptability of cash transfers for unemployed persons (0-10 scale)\
+
+\- **CASHELD**: Acceptability of cash transfers for elderly persons (0-10 scale)
+
+\- **CASHIMMIG**: Acceptability of cash transfers for immigrants (0-10 scale)
+
+\- **CASHCHILD**: Acceptability of cash transfers for young children through parental aid (0-10 scale)
+
+**Policy Instrument Preferences (Q9)**
+
+\- **POLDISABLED**: Binary choice for disabled persons (disability allowance vs. paid training)
+
+\- **POLUNEMP**: Binary choice for unemployed persons (unemployment benefits vs. paid training)
+
+\- **POLMONO**: Binary choice for single-parent families (family allowance vs. childcare place)
+
+\- **POLPOOR**: Binary choice for people in extreme poverty (social allowance vs. paid training)
+
+### Secondary Outcome Variables
+
+**State Responsibility Ratings (Q4)**
+
+\- **GOVELDER**: State responsibility for guaranteeing decent living standards for elderly (0-10 scale)
+
+\- **GOVUNEMP**: State responsibility for guaranteeing decent living standards for unemployed (0-10 scale)
+
+\- **GOVCHILDCARE**: State responsibility for guaranteeing sufficient childcare services (0-10 scale)
+
+\- **GOVCHILD**: State responsibility for guaranteeing decent living conditions for children under 3 (0-10 scale)
+
+\- **GOVIMMIG**: State responsibility for guaranteeing decent living standards for immigrants (0-10 scale)
+
+**Early Childhood Policy Acceptability (Q6)**
+
+ - **Policy A**: Universal financial aid for all parents of children under 3 (0-10 scale)
+
+\- **Policy B**: Targeted financial aid for disadvantaged parents of children under 3 (0-10 scale)
+
+\- **Policy C**: Universal increase in childcare places (0-10 scale)
+
+\- **Policy D**: Targeted increase in childcare places for disadvantaged families (0-10 scale)
+
+**Unemployment Protection Philosophy (QC09E)** - Preference for compensation vs. training purpose of unemployment protection (0-10 scale)
+
+### Experimental Manipulations
+
+**Information Treatment (Q7)**
+
+\- **Treatment Status**: Binary indicator (0=control, 1=treatment)
+
+\- Treatment provides: (1) Information about cash transfer usage patterns, (2) Information about limited control over vulnerability situations
+
+**Austerity Treatment (Q10)**
+
+\- **Austerity Status**: Binary indicator (exposure to macroeconomic constraint information) -
+
+Includes information about inflation, public debt (113% GDP), and potential budget cuts
+
+### Measured Predictors/Covariates
+
+**Individual Characteristics**
+
+\- **ILLNESS (Q1)**: Personal disability status (1=Yes strongly, 2=Yes somewhat, 3=No, 4=Refuse, 5=Don't know)
+
+\- **PARENTSTATUS (Q2a)**: Having children (1=Yes, 2=No)
+
+\- **CHILDCARE (Q2)**: Childcare usage experience (1=Yes, 2=No couldn't access, 3=No by choice, 4=Don't know) \[filtered for parents only\]
+
+**Attitudes and Beliefs**
+
+\- **CHILDCAREOP (Q3)**: Belief that early childcare benefits child development (5-point Likert scale: 1=Strongly disagree to 5=Strongly agree)
+
+ - **CONTROL (Q5)**: Perceived control over unemployment - two items, based on the Perceived Control Scale of Jensen & Petersen (2016) :
+
+\- "Unemployed people could find work if they really wanted to" (5-point Likert scale)
+
+\- "It's people's fault if they become long-term unemployed" (5-point Likert scale)
+
+**Treatment Response Measures**
+
+\- **Misperception (Q7)**: Initial belief about cash transfer spending behavior (1=Spend more on non-essentials, 2=Don't spend more on non-essentials)
+
+\- **Convincingness (Q13)**: How convincing respondent finds the informational treatment (0-10 scale) \[treatment group only\]
+
+### Post-Treatment Outcome Variables
+
+**Post-Austerity Cash Transfer Acceptability (Q8 AUST)**
+
+\- Same 5 items as Q8, measured after austerity treatment
+
+**Post-Austerity Policy Preferences (Q9 AUST)**
+
+\- Same 4 binary choices as Q9, measured after austerity treatment
+
+### Control Variables from Existing ELIPSS Data
+
+**Sociodemographic Variables** - Age, gender, education, income, employment status, household composition - Geographic location and habitat type
+
+**Political and Social Attitudes**
+
+ - **Political orientation**: Left-right self-placement (0-10 scale)
+
+\- **Social trust**: Generalized trust in others (0-10 scale)
+
+ - **Institutional trust**: Trust in various institutions (0-10 scale)
+
+- **Gender role attitudes**: From ISSP 2022 "Family and Social Roles" module
+
+### Randomization Variables
+
+**Item Order Randomization**
+
+\- Random order of presentation for policy groups (maintained consistently within participant) - Random order of items within attitude scales
+
+\- Random order of policy options in Q6
+
+# Analysis Plan
+
+## Statistical Models
+
+### Study Overview
+
+This pre-analysis plan outlines the statistical approach for testing hypotheses in the CAPS project, which examines determinants of social policy acceptability through a three-stage experimental design using the ELIPSS panel in France.
+
+### Hypotheses Summary
+
+#### Stage 1: Merit Hierarchy and Information Treatment
+
+-   **H1a**: Deserving groups (elderly, disabled) will receive higher cash transfer support than less deserving groups (unemployed, immigrants)
+-   **H1b**: Children will receive high support comparable to other high deserving groups
+-   **H2a**: Information correction will increase cash transfer acceptability
+-   **H2b**: Treatment effects will be stronger for initially less supported groups
+
+#### Stage 2: Policy Instruments
+
+-   **H3**: Activation policies preferred for less deserving groups; compensation policies acceptable for deserving groups
+
+#### Stage 3: Macroeconomic Context
+
+-   **H4a**: Austerity information will increase support for activation policies
+-   **H4b**: Austerity effects will be stronger for less deserving groups
+-   **H4c**: Austerity information will decrease support for compensation policies
+-   **H4d**: Compensation decrease will be stronger for less deserving groups
+
+### Variables and Measures
+
+#### Dependent Variables
+
+-   **Cash transfer acceptability**: 0-10 scale ratings for each group (Q8)
+-   **Policy instrument choice**: Binary activation vs. compensation choices (Q9)
+-   **Family policy support**: 0-10 scale ratings for four policies (Q6)
+
+#### Key Independent Variables
+
+-   **Group**: 5 categories (elderly, disabled, children, unemployed, immigrants)
+-   **Information treatment**: Binary (treatment vs. control group from Q7)
+-   **Austerity treatment**: Pre-post comparison (Q8 vs. Q8_AUST)
+
+#### Control Variables
+
+-   Age, gender, education (from ELIPSS background data)
+-   Political orientation (left-right scale from ELIPSS)
+-   Disability status (Q1)
+-   Childcare experience (Q2)
+-   State responsibility attitudes (Q4)
+-   Perceived control beliefs (Q5)
+
+### Statistical Models
+
+#### Stage 1 Models
+
+**Model 1.1: Testing H1a & H1b (Group Differences)**
+
+```         
+OLS: Acceptability_i = β₀ + β₁Elderly_i + β₂Disabled_i + β₃Children_i + β₄Unemployed_i + β₅Controls_i + ε_i
+```
+
+-   **Reference category**: Immigrants (least deserving)
+-   **Sample**: Control group only for baseline differences
+-   **Clustered standard errors**: By participant ID
+-   **Planned contrasts**:
+    -   Deserving groups (elderly, disabled, children) vs. immigrants: t-tests
+    -   Children vs. elderly: t-test
+    -   Children vs. disabled: t-test
+
+**Model 1.2: Testing Treatment Effects**
+
+General effect of the treatment
+
+```         
+OLS: Acceptability_i = β₀ + β₁Treatment_i + β₄Controls_i + ε_i
+```
+
+-   **Main effect interpretation**: β₁ = average treatment effect on overall acceptability
+-   **Clustered standard errors**: By participant ID
+
+**Model 1.3: Testing H2a & H2b (Treatment Effects)**
+
+```         
+OLS: Acceptability_i = β₀ + β₁Treatment_i + β₂Group_i + β₃(Treatment × Group)_i + β₄Controls_i + ε_i
+```
+
+-   **Main effect interpretation**: β₁ = average treatment effect
+-   **Interaction tests**: F-test for Treatment × Group interaction
+-   **Simple effects**: Treatment effect within each group using linear combinations
+
+#### Stage 2 Models
+
+**Model 2.1: Testing H3 (Activation vs. Compensation)**
+
+```         
+Logistic: P(Activation_i) = logit⁻¹(β₀ + β₁Deserving_i + β₂Controls_i)
+```
+
+-   **Deserving**: Binary (1 = disabled; 0 = unemployed, single parents, poor)
+-   **Clustered standard errors**: By participant ID
+-   **Alternative specification**: Linear Probability Models; Separate models for each group comparison
+
+**Model 2.2: Family Policy Preferences**
+
+```         
+OLS: Policy_Support_i = β₀ + β₁Cash_i + β₂Targeted_i + β₃(Cash × Targeted)_i + β₄Controls_i + ε_i
+```
+
+-   **Cash**: Binary (1 = cash transfer, 0 = childcare)
+-   **Targeted**: Binary (1 = targeted, 0 = universal)
+-   **Clustered standard errors**: By participant ID
+
+#### Stage 3 Models
+
+**Model 3.1: Testing H4a-H4d (Austerity Effects on Cash Transfers)**
+
+```         
+OLS: Δ_Acceptability_i = β₀ + β₁Group_i + β₂Controls_i + ε_i
+```
+
+-   **Δ_Acceptability**: Post-austerity minus pre-austerity ratings
+-   **Separate models**: One for each group, then pooled model with group interactions
+-   **H4c test**: One-sample t-test that mean change \< 0
+-   **Clustered standard errors**: By participant ID
+
+**Model 3.2: Austerity Effects on Policy Choices**
+
+```         
+Logistic: P(Switch_to_Activation_i) = logit⁻¹(β₀ + β₁Group_i + β₂Controls_i)
+```
+
+-   **Switch_to_Activation**: Binary (1 = changed from compensation to activation, 0 = no change/other)
+-   **Alternative specification**: Linear Probability Models
+
+### Model Specifications
+
+All analyses will be done in R and RStudio.
+
+#### H1a & H1b: Deservingness Hierarchy
+
+``` r
+# Descriptive analysis of cash transfer acceptability by group
+model1 <- lm(acceptability ~ group + demographic_controls, data = caps_data)
+
+# Specific contrasts:
+# H1a: (elderly + disabled) vs (unemployed + immigrants)
+# H1b: children vs other deserving groups
+```
+
+#### H2a & H2b: Treatment Effects
+
+``` r
+# Main effect of treatment
+model2 <- lm(acceptability ~ treatment + group + treatment*group + controls, 
+             data = caps_data)
+
+# H2a: Main effect of treatment
+# H2b: Treatment × Group interaction (stronger effect for less deserving groups)
+```
+
+#### H3: Policy Instrument Preferences
+
+``` r
+# Linear Probability Models for probability points interpretation
+model3a <- feols(as.numeric(policy_choice) ~ group + controls,
+              family = binomial, data = caps_data)
+
+# Logistic regression for binary policy choices
+model3b <- glm(policy_choice ~ group + deservingness_score + controls, 
+              family = binomial, data = caps_data)
+```
+
+#### H4a-H4d: Austerity Treatment Effects
+
+``` r
+# Difference-in-differences approach
+model4 <- lm(acceptability_change ~ austerity_treatment*group + controls, 
+             data = caps_data)
+
+# Separate models for activation vs compensation preferences
+```
+
+### Analysis Sequence
+
+#### Data Preparation
+
+1.  **Randomization check**: Compare treatment groups on observables using t-tests and chi-square tests
+2.  **Missing data**: Use listwise deletion for main analyses; sensitivity analysis with multiple imputation
+3.  **Outlier detection**: Identify responses \> or less than 3 SD from mean; sensitivity analysis excluding outliers
+
+#### Manipulation Checks
+
+1.  **Information treatment effectiveness**: Chi-square test comparing correct beliefs about cash transfer usage between treatment and control groups
+2.  **Attention checks**: Exclude participants who fail attention questions
+
+#### 
+
+#### Subgroup Analyses
+
+-   By political orientation (left vs. right)
+-   By age (above vs. below median)
+-   By education level
+-   By gender
+
+#### Statistical Reporting
+
+-   All coefficients with 95% confidence intervals
+-   Exact p-values (not just significance indicators)
+-   Model fit statistics (R²)
+
+## Transformations
+
+Likert scales may be recoded into "agree" 1 or 0 dummies for power reasons. These variables will take the value of one if participants answered "strongly agree" (tout à fait d'accord) or "somewhat agree" (assez d'accord).
+
+## Inference Criteria
+
+See statistical models section above for detailed inference criteria and analysis approach.
+
+## Data Exclusion
+
+We will exclude participants with incoherent response time.
+
+## Missing Data
+
+We will impute missing data on independent variables and exclude participants with missing data on the dependent variable.
+
+------------------------------------------------------------------------
+
+*This preregistration was submitted prior to data analysis and follows best practices for experimental research transparency and reproducibility.*
