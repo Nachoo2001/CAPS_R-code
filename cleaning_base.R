@@ -24,7 +24,7 @@ codebook <- read_delim(
   col_names = TRUE       
 )
 
-
+ 
 ## Données
 
 dat <- read_delim(
@@ -52,9 +52,9 @@ rename_map <- c(
   Treated             = "caps_ALEA_C",
   
   # ========= Variables expé ==========#
-  HANDICAP              = "caps_QC01A",
-  ENFANTS              = "caps_QC02A",
-  UseECS               = "caps_QC02",
+  ILLNESS              = "caps_QC01A",
+  has_child              = "caps_QC02A",
+  USECHILDCARE               = "caps_QC02",
   CHILDCAREOP            = "caps_QC03",
   GOVELDER               = "caps_QC04A",
   GOVUNEMP                  = "caps_QC04B",
@@ -63,8 +63,6 @@ rename_map <- c(
   GOVIMMIG              = "caps_QC04E",
   CONTROLMIG             = "caps_QC05_1",
   CONTROLMIG2             = "caps_QC05_2",
-  CONTROLMIG_order     = "caps_QC05_DO_QC05_1",
-  CONTROLMIG2_order     = "caps_QC05_DO_QC05_2",
   POLFAM_transfer              = "caps_QC06A",
   POLFAM_transfer_poor              = "caps_QC06B",
   POLFAM_daycare              = "caps_QC06C",
@@ -112,6 +110,8 @@ rename_map <- c(
   GOVUNEMP_order      = "caps_QC04_DO_QC04B",
   GOVELDER_order      = "caps_QC04_DO_QC04A",
   qc04_do_transition = "caps_QC04_DO_transition",
+  CONTROLMIG_order     = "caps_QC05_DO_QC05_1",
+  CONTROLMIG2_order     = "caps_QC05_DO_QC05_2",
   qc06_do_transition = "caps_QC06_DO_transition",
   POLFAM_daycare_poor_order      = "caps_caps_QC06_DO_QC06D",
   POLFAM_daycare_order      = "caps_QC06_DO_QC06C",
@@ -137,7 +137,7 @@ rename_map <- c(
   tuu                = "cal_TUU",     
   region               = "cal_ZEAT",    
   
-  # --- Pondérations / splits (noms parlants) ---
+  # --- Pondérations ---
   pdsplt_init        = "PDSPLT_INIT",
   poids_init         = "POIDS_INIT",
   panel              = "panel",
@@ -247,13 +247,31 @@ rename_map <- c(
   wave         = "eayy_vague"
 )
 
+# Check 
 map_tbl <- tibble(
   new  = names(rename_map),
   old  = unname(rename_map)
 )
 
-
+# Dataset with variables renamed
 data <- dat %>%
   rename(!!!rename_map) %>%
   select(all_of(names(rename_map)))
+
+
+
+# ================== Recodage des variables expérimentales ====================== #
+
+
+
+
+
+
+
+
+
+
+
+
+
 
